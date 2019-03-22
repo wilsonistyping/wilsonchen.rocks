@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Homepage - Wilson</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <!-- Hello, wanderer! I see you're using inspect element! -->
+
+  <!-- NAVBAR START -->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <!-- Homepage button! -->
+      <a id="logo-container" href="index.html" class="brand-logo">Home</a> <!-- Replace this with a good picture icon once you find/create one. -->
+
+      <!-- DROPDOWN1: REHUGO PROJECT-->
+      <!-- Dropdown script has been added at the end of the code. Required for dropdown functionality to work. -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="reading.html">READING</a></li>
+        <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="truths.html">UNIVERSAL TRUTHS</a></li>
+        <li><a href="government.html">GOVERNMENT</a></li>
+        <li><a href="observations.html">OBSERVATIONS</a></li>
+      </ul>
+
+      <!-- Desktop Navbar -->
+      <!--
+
+        Here's the planned navbar layout:
+          [ Blog ]
+          [ About ]
+          [ Projects ]
+          [ Contact ]
+        Does it feel a bit too empty? Too much? I don't want to have to change it midway through development.
+
+        Remember to use class="active" within <li> to mark the current page the user is on for intuitive navigation.
+
+      -->
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="blog1.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>        
+
+        <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">THE REHUGO PROJECT<i class="material-icons right">arrow_drop_down</i></a></li> -->
+      </ul>
+
+      <!-- Mobile Navbar -->
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="blog1.html">Blog</a></li>
+        <li><a href="blog1.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <!-- BODY START -->
+  <div class="container">
+    <div class="section">
+      <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-4 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s12">
+              <img src="images/index1_riverwalk.jpg" alt="" class="circle responsive-img">
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+
+ 
+
+
+
+
+
+
+  <!-- BODY END -->
+
+  <!-- FOOTER START -->
+  <footer class="page-footer cyan darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Welcome home.</h5>
+          <p class="grey-text text-lighten-4">
+            
+            Hi, I'm Wilson Chen. I'm a young man with a big dream. 
+            I built this website to chronicle the journeys I'll take, the stories I'll make, and the rules I'll break. 
+          
+          </p>
+        </div>
+        <div class="col l6 s12">
+          <h5 class="white-text">Social Media (links don't work yet)</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      I couldn't have made this site without <a class="brown-text" href="http://materializecss.com">Materialize CSS</a>. Check them out sometime, I'm big fans of these guys.
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+
+  <!-- Various Scripts -->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <!-- DROPDOWN script -->
+  <script>
+    $(document).ready(function()  {
+      $(".dropdown-trigger").dropdown();
+    });
+  </script>
+
+  <!-- SLIDER script -->
+  <script>
+   $(document).ready(function(){
+    $('.slider').slider();
+  });
+  </script>
+</body>
+</html>

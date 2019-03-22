@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Homepage - Wilson</title>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <!-- Hello, wanderer! I see you're using inspect element! -->
+
+  <!-- NAVBAR START -->
+  <div id="mainNavbar"></div>
+
+  <script>
+    $(function(){
+      $("#mainNavbar").load("nav.html");
+    });
+  </script>
+  <!-- NAVBAR END -->
+
+  <!-- BODY START -->
+  <div class="container">
+    <div class="section">
+      <div class="col s12 m8 offset-m2 l6 offset-l3"> <!-- MAIN CARD -->
+        <div class="card-panel grey lighten-5 z-depth-4">
+          <div class="row valign-wrapper"> <!-- SUB-CARD SECTION 1 BEGIN -->
+            <div class="col s12 m6"> 
+              <img src="images/profile1_suitSquare.jpg" alt="Portrait of Wilson Chen" class="circle responsive-img z-depth-2">
+            </div>
+            <div class="col s12 m6">
+              <div class="container">
+              <span><h5 class="center"> Hi, I'm Wilson Chen. I was born in Manhattan, New York, but I've been a resident of Tampa, Florida for as long as I can remember.
+                    I'm on a journey to define myself, one adolescent on a pilgrimage toward the next stages of life. 
+              </h5>
+              </span>
+              </div>
+            </div>
+          </div>                             <!-- SUB-CARD SECTION 1 END -->
+        </div>          
+      </div>                                   <!-- MAIN CARD ENDS HERE -->
+    </div>
+  </div>
+
+ 
+
+
+
+
+
+
+  <!-- BODY END -->
+
+  <!-- FOOTER START -->
+  <footer class="page-footer grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Welcome home.</h5>
+          <p class="grey-text text-lighten-4">
+            
+            Hi, I'm Wilson Chen. I'm a young man with a big dream. 
+            I built this website to chronicle the journeys I'll take, the stories I'll make, and the rules I'll break. 
+          
+          </p>
+        </div>
+        <div class="col l6 s12">
+          <h5 class="white-text">Social Media (links don't work yet)</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      I couldn't have made this site without <a class="brown-text" href="http://materializecss.com">Materialize CSS</a>. Check it out if you're interested!
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+
+  <!-- Various Scripts -->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    // Enables dropdown menu
+    $(document).ready(function()  {
+      $(".dropdown-trigger").dropdown();
+    });
+  </script>
+
+  <script>
+    // Enables slider? What's the slider do again?
+   $(document).ready(function(){
+    $('.slider').slider();
+  });
+  </script>
+</body>
+</html>
