@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Homepage - Wilson</title>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <!-- Hello, wanderer! I see you're using inspect element! -->
+
+  <!-- NAVBAR START -->
+  <div id="mainNavbar"></div>
+
+  <script>
+    $(function(){
+      $("#mainNavbar").load("nav.html");
+    });
+  </script>
+  <!-- NAVBAR END -->
+
+  <!-- BODY START -->
+
+  <img src="images/profile1_suitSquare.jpg" style="width:100%" alt="Portrait of Wilson Chen" class="responsive-img z-depth-2">
+
+  <!-- BODY END -->
+
+  <!-- FOOTER START -->
+    <!-- Oh wait, no footer for the index. Right. -->
+    <!-- DESIGN DECISIONS -->
+  <!-- "FOOTER" END -->
+
+
+  <!-- Various Scripts -->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    // Enables dropdown menu
+    $(document).ready(function()  {
+      $(".dropdown-trigger").dropdown();
+    });
+  </script>
+
+  <script>
+    // Enables slider
+   $(document).ready(function(){
+    $('.slider').slider();
+  });
+  </script>
+</body>
+</html>

@@ -55,3 +55,11 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.floatleft {
+  float: left;
+}
+
+.w50 {
+  width: 50%;
+}
