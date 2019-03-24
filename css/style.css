@@ -63,3 +63,11 @@ footer.page-footer {
 .w50 {
   width: 50%;
 }
+
+.article {
+  text-indent: 50px;
+}
+
+.fixedimageheader { 
+  width: 100%;
+}
