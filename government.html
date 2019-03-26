@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>R: Reading - Wilson</title>
+  <title>R: Freakonomics - Wilson</title>
 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
@@ -30,7 +30,7 @@
     <div class="col l10 offset-l1">
       <div class="card right-aligned z-depth-5 grey lighten-3 ">
         <div class="container">
-          <span class="card-title black-text"><br><h4>Freakonomics - The Unorthodox Ways Our World Works</h4><br></span>
+          <span class="card-title black-text"><h1>Freakonomics - The Unorthodox Ways Our World Works</h1></span>
         </div>
         <div class="container">
           <div class="section">
@@ -43,37 +43,23 @@
               <p>There’s plenty of more interesting observations to be made about Feldman’s statistics. For example, the aftermath of September 11th, 2001, brought up a not insignificant increase in the payment rate, reverting its slow downward trend. Furthermore, weather interestingly plays a major role in whether or not someone pays. More people pay when the weather’s pleasant, and less people pay in the presence of bad weather. Surprisingly, there are holidays in which people steal more, and holidays where the payment rate goes up. Christmas, Valentines Day, and Thanksgiving are offenders of increased bagel theft, while the Fourth of July, Labor Day, and Columbus Day inspire more people to pay, for some reason. </p>
               <p>While we can go on and on about statistics (and rest assured, there’s still an abundance of them), let’s instead go back to the overall conclusions of this study. If we’re looking at it from a pessimistic end, sure, it seems bad that roughly 10% of customers regularly steal from his bagel business. However, if you switch the statistic around, you’ll be happy to find that around 90% of customers don’t steal in Feldman’s honor system. An overwhelming majority of customers use their moral compasses to give back to the bagel giver, even with the anonymity. So then. Are people by nature evil? Given the knowledge that no one’s watching over their actions, do their evils triumph their morals? The answer, in the eyes of a bagel seller? No.</p>
             </div>
-            <div class="center-align">
             <a href="entertainment.html" class="waves-effect waves-light btn-large">To Entertainment</a>
-            </div>  
           </div>
         </div>
       </div>
     </div>
-
+  </div>
 
 
 
   <!-- FOOTER START -->
-  <footer class="page-footer orange darken-1">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Hello!</h5>
-            <p class="grey-text text-lighten-4">
-            
-                Wilson Chen is a junior at Middleton High School in Tampa, Florida, interested in artificial intelligence and cognitive science.
-              
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        I couldn't have made this site without <a class="white-text" href="http://materializecss.com">Materialize CSS</a>.
-        </div>
-      </div>
-    </footer>
+  <div id="mainFooter"></div>
+
+  <script>
+    $(function(){
+      $("#mainFooter").load("footer.html");
+    });
+    </script>
   <!-- FOOTER END -->
 </body>
 </html>
