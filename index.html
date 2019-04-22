@@ -29,7 +29,7 @@
 
   <script>
     $(function(){
-      $("#mainNavbar").load("rehugo/navRehugo.html");
+      $("#mainNavbar").load("navRehugo.html");
     });
   </script>
   <!-- NAVBAR END -->
@@ -116,13 +116,38 @@
   </div>
 
   <!-- FOOTER START -->
-  <div id="mainFooter"></div>
-  <script>
-    $(function(){
-      $("#mainFooter").load("rehugo/footer.html");
-    });
-    </script>
+  <footer class="page-footer cyan darken-1">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Welcome.</h5>
+            <p class="grey-text text-lighten-4">
+            
+                Wilson Chen is a junior at Middleton High School in Tampa, Florida, interested in artificial intelligence and cognitive science.
+              
+            </p>
+          </div>
+          <div class="col l6 s12">
+            <h5 class="white-text">Social Media</h5>
+            <ul>
+              <li><a class="white-text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Twitter</a></li>
+              <li><a class="white-text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        I couldn't have made this site without <a class="white-text" href="http://materializecss.com">Materialize CSS</a>.
+        </div>
+      </div>
+    </footer>
     <!-- FOOTER END -->
-  
+
+  <script>
+    $(document).ready(function()  {
+      $(".dropdown-trigger").dropdown();
+    });
+  </script>
 </body>
 </html>
