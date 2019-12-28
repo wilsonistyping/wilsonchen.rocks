@@ -9,15 +9,14 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="Stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!--  Scripts-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
   
 </head>
 <body>
@@ -25,20 +24,45 @@
   
 
   <!-- NAVBAR START -->
-  <div id="mainNavbar"></div>
+  <nav class="grey" role="navigation">
+    <div class="nav-wrapper container">
+      <!-- Homepage button! -->
+      <a id="logo-container" href="../index.html" class="brand-logo">Return</a>
 
-  <script>
-    $(function(){
-      $("#mainNavbar").load("navRehugo.html");
-    });
-  </script>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reading.html">Reading</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="universaltruth.html">Universal Truths</a></li>  
+        <li><a href="government.html">Government</a></li>  
+        <li><a href="observation.html">Observations</a></li>          
+
+       
+      </ul>
+
+      <!-- Mobile Navbar -->
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="reading.html">READING</a></li>
+        <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="universaltruth.html">UNIVERSAL TRUTHS</a></li>
+        <li><a href="government.html">GOVERNMENT</a></li>
+        <li><a href="observation.html">OBSERVATIONS</a></li>
+      </ul>
+
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
   <!-- NAVBAR END -->
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center grey-text text-darken-4">REHUGO</h1>
+        <h1 class="header center grey-text text-lighten-4">REHUGO</h1>
         <br><br>
         <div class="row center">
           <a href="reading.html" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-1 pulse">Begin</a>
@@ -46,7 +70,7 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="images/background1_nyc.jpg" alt="New York View, https://publicdomainpictures.net/en/view-image.php?image=211762&picture=new-york-view"></div>
+    <div class="parallax"><img src="images/index-banner-optimized.jpg" alt="New York View, https://publicdomainpictures.net/en/view-image.php?image=211762&picture=new-york-view"></div>
   </div>
 
 
@@ -78,11 +102,6 @@
       </div>
 
     </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/background2_tampa.jpg" alt="Tampa Bay"></div>
   </div>
 
   <div class="container">
@@ -118,36 +137,12 @@
   <!-- FOOTER START -->
   <footer class="page-footer cyan darken-1">
       <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Welcome.</h5>
-            <p class="grey-text text-lighten-4">
-            
-                Wilson Chen is a junior at Middleton High School in Tampa, Florida, interested in artificial intelligence and cognitive science.
-              
-            </p>
-          </div>
-          <div class="col l6 s12">
-            <h5 class="white-text">Social Media</h5>
-            <ul>
-              <li><a class="white-text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Twitter</a></li>
-              <li><a class="white-text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Instagram</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">
-        I couldn't have made this site without <a class="white-text" href="http://materializecss.com">Materialize CSS</a>.
-        </div>
+       <div class="container">Made by Wilson Chen in junior year, Spring 2019.</div>
       </div>
     </footer>
     <!-- FOOTER END -->
 
-  <script>
-    $(document).ready(function()  {
-      $(".dropdown-trigger").dropdown();
-    });
-  </script>
 </body>
 </html>
