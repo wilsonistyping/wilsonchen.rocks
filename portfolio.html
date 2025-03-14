@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Homepage - wilsonchen.rocks </title>
+  <style>
+    .card .card-image .card-title {
+      padding: 12px;
+    }
+  </style>
+</head> 
+<body>
+
+  <!-- Nav -->
+  <nav class="grey darken-4 z-depth-5" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo white-text">WC.R</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+      <li><a href="bloghome.html" class="white-text">Blog</a></li>
+      <li class="active disabled"><a href="portfolio.html" class="white-text">Portfolio</a></li class="active disabled">
+      <li><a href="contact.html" class="white-text">Contact</a></li>
+      <li><a href="experimental.html" class="white-text" title="Messing around with new HTML5 concepts as I'm learning them. Click at your own risk!">Experimental</a></li>
+      </ul>
+    </div>
+    <ul class="sidenav grey darken-4 z-depth-5" id="mobile-demo">
+      <li><a href="bloghome.html" class="white-text">Blog</a></li>
+      <li><a href="portfolio.html" class="white-text">Portfolio</a></li>
+      <li><a href="contact.html" class="white-text">Contact</a></li>
+    </ul>
+  </nav>
+
+  <br><br>
+  <div class="container">
+
+    <div class="row">
+      <div class="col s12 m6">
+        <!-- Project 1 -->
+        <div class="card z-depth-5">
+          <div class="card-image">
+            <img src="REHUGO/images/entertainment_owoview.jpg">
+            <span class="card-title text-image-contrast-invert">REHUGO</span>
+          </div>
+          <div class="card-content">
+            <p>An AP Lang cumulative project exploring the world around us through a collection of miniature essays revolving around six primary principles - Reading, Entertainment, History, Universal Truths, Government, and Observations.</p>
+          </div>
+          <div class="card-action">
+            <a href="REHUGO/index.html">Enter</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <!-- Project 2 -->
+        <div class="card z-depth-5">
+          <div class="card-image">
+            <img src="images/landing-bokeh-sunset.jpg">
+            <span class="card-title text-image-contrast-invert">Photography</span>
+          </div>
+          <div class="card-content">
+            <p>I'm an amateur photographer who is actively learning new photo editing techniques and experimenting with various photography concepts.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.instagram.com/wcmediaworks/">Enter</a>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+    <br>
+    <!-- <div class="row"> -->
+      <div class="col s12 m6">
+        <!-- Project 3 -->
+        <div class="card z-depth-5">
+          <div class="card-image">
+            <img src="images/minecraft-header.png">
+            <span class="card-title text-image-contrast-invert">Minecraft Projects</span>
+          </div>
+          <div class="card-content">
+            <p>I use Minecraft as a creative outlet to create landscapes and architecture that come to my imagination. Here's a collection of my work.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">[Currently in development]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script>
+  // Below script initializes sidenav functionality
+  $(document).ready(function(){
+    $(".sidenav").sidenav();
+  });
+  </script>
+</body>
+</html>
